@@ -1,0 +1,160 @@
+.todo {
+  width:320px;
+  flex-basis:280px;
+  height:200px;
+  padding:5px 10px;
+  background-color: var(--white);
+  border-radius:10px;
+  min-height:100px;
+  display:flex;
+  flex-direction: column;
+  align-items:flex-start;
+  justify-content: space-between;
+}
+
+.todo h1 {
+  font-size: 17px;
+  margin-bottom:1px;
+  word-break: break-all;
+
+}
+
+.todo p {
+  text-align: left;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  line-height: 1.5;
+  color:var(--gray);
+  word-break: break-all;
+
+  font-weight: 400;
+  font-size:13px;
+}
+
+.todo__title {
+  width:100%;
+  display:flex;
+  align-items:center;
+  flex-direction:row;
+  justify-content: space-between;
+  padding:10px 0;
+  align-self: center;
+}
+
+.todo__title h1 {
+  font-size: 17px;
+  margin:0;
+  color:var(--lightblack)
+}
+
+.todo__title i {
+  border:none;
+  padding:5px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius:5px;
+  color:red;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+
+.todo__footer {
+  width:100%;
+  display:flex;
+  padding:3px 0;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.todo__footer__status  {
+ width:auto;
+ display:flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: row;
+
+}
+
+
+
+.todo__footer__status h4 {
+font-size:13px;
+padding:0 2px;
+font-weight:500;
+color:var(--lightblack);
+overflow: hidden;
+
+}
+
+.todo__footer__status i svg {
+  color: var(--blue);
+  font-size: 14px;
+  cursor: pointer;
+  margin-top:5px;
+  
+}
+
+.todo__footer label{
+  font-size:12px;
+  color:#2BCF8A;
+  border-radius:5px;
+  background-color: #DDF8ED;
+  padding:10px;
+  cursor:pointer;
+  font-weight:bold;
+
+
+}
+
+
+.todo__footer .label__todo {
+  background-color: #E7EEFE;
+  color:#132FE5;
+}
+
+.todo__footer .label__todo:hover {
+  background-color: #132FE5;
+  color:#fff;
+}
+
+.todo__footer .label__inprogress {
+    background-color: #FFEED7;
+  font-weight:bold;
+  color:#FFCD00;
+}
+
+.todo__footer .label__inprogress:hover {
+  background-color: #FFCD00;
+  color:#fff;
+
+}
+
+.todo__footer .label__done {
+  color:#2BCF8A;
+  border-radius:5px;
+  background-color: #DDF8ED;
+}
+
+
+
+.todo__footer .label__done:hover{
+  background-color: #2BCF8A;
+  color:#fff;
+}
+
+@media(max-width:768px) {
+  .todo {
+    justify-content:center;
+    align-items: center;
+    flex-basis:300px;
+  }
+}
+
+@media (max-width:480px) {
+  .todo {
+    flex-basis:calc(100%  - 20%)
+  }
+}

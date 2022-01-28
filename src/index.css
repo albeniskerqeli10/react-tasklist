@@ -1,0 +1,57 @@
+
+:root {
+  --lightblue:#E8EFFF;
+  --darkblue:#003366; 
+  --blue:#1D5EFF;
+  --darkblack: #131010;
+  --black: #000;
+  --gray:#585858;
+
+  --white: #fff;
+  --lightblack: #131010;
+}
+
+.light-mode {
+  --lightblue:#E8EFFF;
+  --darkblue:#003366; 
+  --blue:#1D5EFF;
+  --darkblack: #131010;
+  --black: #000;
+  --gray:#585858;
+  --white: #fff;
+  --lightblack: #131010;
+}
+.dark-mode {
+  --lightblue: #18191A;
+  --white: #242526;
+  --lightblack:#fff;
+  --gray:#B2B2B2;
+}
+
+html {
+  min-height:100%;
+}
+
+body {
+  margin:0;
+  padding: 0;
+  font-family:'Montserrat',sans-serif;
+  background-color: var(--lightblue);
+  /* extra color : #FDFDFC */
+   
+}
+
+input,textarea,select,option,button {
+  font-family: inherit;
+}
+
+.App__wrapper {
+  width:100%;
+  min-height:80vh;
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  text-align: center;
+  
+}
